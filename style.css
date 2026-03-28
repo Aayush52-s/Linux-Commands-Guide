@@ -289,28 +289,39 @@ code {
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
     .commands-table td {
-        text-align: right;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 12px 10px;
         border-bottom: 1px dashed var(--border-color);
-        position: relative;
-        padding-left: 40%;
+        gap: 6px;
     }
     .commands-table td:last-child {
         border-bottom: none;
     }
     .commands-table td::before {
         content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: 35%;
-        text-align: left;
         font-weight: 600;
-        color: var(--text-primary);
-        font-size: 0.85rem;
+        color: var(--text-secondary);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
     .num-col {
         width: 100%;
-        text-align: right;
+        text-align: left;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--bg-primary);
+        border-radius: 8px 8px 0 0;
+        margin: -10px -10px 0 -10px;
+        padding: 10px 15px !important;
+        border-bottom: 1px solid var(--border-color) !important;
+    }
+    .num-col::before {
+        font-size: 0.9rem !important;
+        color: var(--text-primary) !important;
     }
 }
 
