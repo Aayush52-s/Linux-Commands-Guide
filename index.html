@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Linux Commands - Aayush Sojitra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="animated-bg"></div>
+<button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+<div class="container">
+    <div class="header">
+        <h1>🐧 Ultimate Linux Commands Reference</h1>
+        <p>Complete guide with 250+ commands | Created by Aayush Sojitra</p>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat"><div class="stat-number" id="totalCommands">0</div><div class="stat-label">Commands</div></div>
+        <div class="stat"><div class="stat-number">15</div><div class="stat-label">Categories</div></div>
+        <div class="stat"><div class="stat-number">100+</div><div class="stat-label">Examples</div></div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 Search commands (name, description, example)..." autocomplete="off">
+        <div class="filter-buttons" id="filterButtons"></div>
+    </div>
+
+    <div id="tocContainer" class="toc"></div>
+
+    <div id="sectionsContainer"></div>
+
+    <div class="footer">
+        <p>© 2026 Aayush Sojitra – All Rights Reserved | Made with ❤️ for the Linux community</p>
+        <p style="font-size:0.8rem; margin-top:8px;">📖 Version 1.0 – Numbered Categories & Numbered Commands for Easy Reference</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
